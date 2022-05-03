@@ -8,6 +8,9 @@ let opcion;
 let servicios;
 let pagos;
 
+
+
+
 const transferencia = () => {
     transferir = parseFloat(prompt("Cuanto dinero desea transferir? -> "));
     if (isNaN(transferir)) {
@@ -73,18 +76,18 @@ while (continua) {
         if (isNaN(numeroTelefono)) {
             alert("telefono inválido");
         } else {
-            servicios = parseInt(prompt("¿Que paquete desea comprar \n 1. 100 Gb Datos+ 1000 minutos+ 1000 sms por 500 pesos  \n 2. 1000 Minutos por 300 pesos \n 3. 1000 SMS por 300 pesos \n 4. 100 Gb de Datos por 300 pesos \n 5. Volver"))
+            bolsa = parseInt(prompt("¿Que paquete desea comprar \n 1. 100 Gb Datos+ 1000 minutos+ 1000 sms por 500 pesos  \n 2. 1000 Minutos por 300 pesos \n 3. 1000 SMS por 300 pesos \n 4. 100 Gb de Datos por 300 pesos \n 5. Volver"))
             if (isNaN(servicios) || servicios > 5) {
                 alert("Ingresá una opción válida");
-            } else if (servicios === 1) {
+            } else if (bolsa1 === 1) {
                 paquete();
-            } else if (servicios === 2) {
+            } else if (bolsa2 === 2) {
                 paquete()
-            } else if (servicios === 3) {
+            } else if (bolsa3 === 3) {
                 paquete()
-            } else if (servicios === 4) {
-                paquete()
-            }
+            } //else if (bolsa === 4) {
+            //     paquete()
+            // }    
         }
     } else if (opcion === 5) {
         alert("Gracias por preferir Talys Celucorp");
@@ -104,3 +107,36 @@ while (continua) {
 //         alert("Su saldo es de: " + saldo);
 //     }
 // }
+
+//Declaracion de variables "Bolsa"
+let nombreBolsa = "";
+let gigasBolsa = "";
+let minutosBolsa = "";
+let smsBolsa = "";
+let precioBolsa = "";
+
+// Creacion de clase "bolsa"
+class bolsa {
+    constructor(nombre, gigas, minutos, sms, precio) {
+        this.nombre = nombre;
+        this.gigas = gigas;
+        this.minutos = minutos;
+        this.sms = sms;
+        this.precio = precio;
+    }
+}
+
+// Bolsas a elegir
+const bolsa1 = new bolsa("Pequeña", "20 Gigas", "100 minutos", "200 sms", "150 pesos");
+const bolsa2 = new bolsa("Mediana", "50 gigas", "500 minutos", "500 sms", "300 pesos");
+const bolsa3 = new bolsa("Full", "100 gigas", "1000 minutos", "1000 sms", "500 pesos");
+
+
+const comprarBolsa = () => {
+    // Array de las bolsas
+    let arrayBolsas = [bolsa1, bolsa2, bolsa3];
+    arrayBolsas.push(bolsa);
+    return arrayBolsas
+}
+
+comprarBolsa()

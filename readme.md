@@ -1,3 +1,3 @@
 # primer proyecto JavaScript
 
-## ver [DEMO](https://talysj.github.io/proyectoJS/) del sitio.
+## ver [DEMO](https://talysj.github.com/proyectoJS/) del sitio.
