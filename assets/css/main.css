@@ -1,13 +1,18 @@
-
+.h1 {
+    border: 3px solid;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+}
 
 div{
     text-align: center;
-    background-color: purple;
-    color: white;
 }
 
 body {
-    background: url(/assets/images/verguenza-hablar-tlf-ilustracion-ki6E--1248x698@abc.jpg);
+    background: url(/assets/images/bmw-collage.jpg);
 }
 
 @keyframes example {
