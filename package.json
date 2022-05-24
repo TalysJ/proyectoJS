@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss assets/scss/index.scss assets/css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/TalysJ/proyectoJS/issues"
   },
-  "homepage": "https://github.com/TalysJ/proyectoJS#readme"
+  "homepage": "https://github.com/TalysJ/proyectoJS#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "react-toastify": "^9.0.1"
+  }
 }

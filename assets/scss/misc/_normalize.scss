@@ -1,0 +1,79 @@
+h1 {
+    color: white;
+    align-items: center;
+    padding: 3px;
+    background: rgb(233,233,233);
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(0,0,0,1) 50%, rgba(233,233,233,1) 100%);
+    background-size: auto;
+
+}
+h2 {
+    color: white;
+    align-items: center;
+    padding: 3px;
+    background: rgb(233,233,233);
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(0,0,0,1) 50%, rgba(233,233,233,1) 100%);
+    background-size: auto;
+
+}
+h3 {
+    color: white;
+    align-items: center;
+    padding: 3px;
+    background: rgb(233,233,233);
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(0,0,0,1) 50%, rgba(233,233,233,1) 100%);
+    background-size: auto;
+}
+
+p {
+    color: white;
+    align-items: center;
+    padding: 3px;
+    background: rgb(233,233,233);
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(0,0,0,1) 50%, rgba(233,233,233,1) 100%);
+    background-size: auto;
+    font-size: large;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    // img {
+    //     // width: 15rem;
+    //     // height: 15rem;
+    //     // object-fit: cover;
+    // }
+}
+
+div{
+    text-align: center;
+}
+
+body {
+    background: url(/assets/images/bmw-collage.jpg);
+}
+
+@keyframes example {
+    from {
+    background-position-x: right; }
+    to {
+    background-position-x: left; } }
+body {
+    animation-name: example;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; } 
+
+.divTotal   {
+    color: white;
+    align-items: center;
+    padding: 3px;
+    background: rgb(233,233,233);
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(0,0,0,1) 50%, rgba(233,233,233,1) 100%);
+    background-size: auto;
+}

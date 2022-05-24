@@ -23,7 +23,7 @@ class bmw {
 
 const motor1 = new bmw(
     1,
-    "Motor S85",
+    "MOTOR S85",
     "Bmw M5 E60 V10 2005",
     "El BMW S85 es un motor de gasolina V10 de 5.0 litros de altas revoluciones diseñado para utilizar la potencia en una amplia gama de bandas de revoluciones. Su alta relación de compresión de 12.0, superando a los modelos M3 anteriores, puede alcanzar al menos 100 hp / litro mientras alcanza la línea roja a 8250 RPM",
     3000.0,
@@ -32,7 +32,7 @@ const motor1 = new bmw(
 );
 const motor2 = new bmw(
     2,
-    "Motor S50",
+    "MOTOR S50",
     "Bmw M3 E36 1991",
     "La potencia máxima del motor - 143 kW / 195 hp - se obtiene por 5900 rpm, y el par máximo (torque) de 244 Nm - por 4700 rpm. En 7.30 s el BMW 325i puede acelerar de 0 a 60 mph. El automóvil tiene la capacidad de hacer un cuadro de milla en 15.80 s. El vehículo tiene un coeficiente de resistencia/arrastre de 0.3.",
     2000,
@@ -41,7 +41,7 @@ const motor2 = new bmw(
 );
 const motor3 = new bmw(
     3,
-    "Motor S65",
+    "MOTOR S65",
     "Motor M3 E92 2007",
     "El BMW S65 es un motor de gasolina V8 de aspiración natural que se fabricó entre 2007 y 2013. Su uso principal fue en el BMW M3 (donde reemplazó al motor BMW S54 de seis cilindros en línea). No hay un reemplazo directo para el S65, ya que la siguiente generación de M3 cambió a un motor turboalimentado de seis cilindros en línea (el BMW S55 ).",
     2500,
@@ -50,7 +50,7 @@ const motor3 = new bmw(
 );
 const transmision1 = new bmw(
     4,
-    "Transmision M54 Zf",
+    "TRANSMISION M54 Zf",
     "Transmision Bmw M5 E60",
     "Transmision manual de 6 velocidades para Bmw M5 E60 2005.",
     1200,
@@ -59,7 +59,7 @@ const transmision1 = new bmw(
 );
 const transmision2 = new bmw(
     5,
-    "Transmision 46k",
+    "TRANSMISION 46k",
     "Transmision de E36",
     "Transmision de 6 velocidades para Bmw M5 E36 1991.",
     1000,
@@ -68,7 +68,7 @@ const transmision2 = new bmw(
 );
 const transmision3 = new bmw(
     6,
-    "Transmision N54",
+    "TRANSMISION N54",
     "Transmision para E92",
     "Transmision de 6 velocidades para Bmw M3 E92 2007.",
     1200,
@@ -77,7 +77,7 @@ const transmision3 = new bmw(
 );
 const turbo1 = new bmw(
     7,
-    "Turbo E46",
+    "TURBO E46",
     "Turbo E46 para E46 E39",
     "Turbo garret para modelos 318d 320d 520d E46 E39 2.0D, Diesel.",
     500,
@@ -86,7 +86,7 @@ const turbo1 = new bmw(
 );
 const turbo2 = new bmw(
     8,
-    "Turbo B58",
+    "TURBO B58",
     "Turbo B58 para modelo Bmw 340i",
     "Turbo B58 para modelo Bmw 340i de 2015 a 2022",
     700,
@@ -95,7 +95,7 @@ const turbo2 = new bmw(
 );
 const turbo3 = new bmw(
     9,
-    "Turbo F80",
+    "TURBO F80",
     "Turbo de Bmw M4",
     "Turbo para Bmw M2, M3 y M4 F80 F82 F87 2015 a 2022 ",
     800,
@@ -191,10 +191,26 @@ const buscador = () => {
         });
     });
 };
+
 //FUNCION AGREGAR AL CARRITO
 const agregarCarrito = (bmw) => {
+
     if (carrito.includes(bmw)) {
-        alert("Ya esta en tu carrito!");
+        // alert("Ya esta en tu carrito!");
+        Toastify({
+            text: "Ya esta en tu carrito",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "linear-gradient(to right, #c5c5c5, #020024)",
+            },
+            onClick: function () {} // Callback after click
+        }).showToast();
     } else {
         const divBmwCard = document.createElement("div");
         divBmwCard.setAttribute("id", "bmw-card");
@@ -224,7 +240,20 @@ const agregarCarrito = (bmw) => {
             divTotal.textContent = `Total: ${totalCarrito}`;
         }
     }
-
+    Toastify({
+        text: "Se agrego tu producto al carrito",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #c5c5c5, #020024)",
+        },
+        onClick: function () {} // Callback after click
+    }).showToast()
     localStorage.setItem("BmwsAgregados", JSON.stringify(carrito));
 };
 
