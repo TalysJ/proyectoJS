@@ -6,6 +6,7 @@ let divBmw = document.getElementById("divBmw");
 let inputBuscador = inputTexto.value;
 let botonVaciar = document.getElementById("vaciar-carrito")
 let divTotal = document.getElementById('total-carrito')
+let btns = document.getElementById("agregar-carrito ")
 
 
 //Objetos
@@ -285,6 +286,23 @@ const vaciarCarrito = () => {
         console.log(carrito.length)
     })
 }
+
+//FUNCION FETCH
+
+const data = document.querySelector("#caja")
+
+fetch("./js/stock.json")
+.then((Response) => Response.json())
+.then((data) => {
+    data.forEach(element =>{
+        caja.innerHTML += 
+        `<button class= "btn.fetch btn-secondary">Agregar al carrito"</button>
+        <img style = "width: 100 px";" src="${element.img} ">
+        <p>${element.nombre}</p>
+        `
+    });
+
+});
 
 
 mostrarModal();

@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "serie": "MOTOR S85",
+        "nombre": "Bmw M5 E60 V10 2005",
+        "descripcion": "El BMW S85 es un motor de gasolina V10 de 5.0 litros de altas revoluciones diseñado para utilizar la potencia en una amplia gama de bandas de revoluciones. Su alta relación de compresión de 12.0, superando a los modelos M3 anteriores, puede alcanzar al menos 100 hp / litro mientras alcanza la línea roja a 8250 RPM",
+        "precio": 3000.0,
+        "divisa": "USD",
+        "img": "./assets/images/motor-s85-bmw-v10jpg.jpg"
+    },
+    {
+        "id": 2,
+        "serie": "MOTOR S50",
+        "nombre": "Bmw M3 E36 1991",
+        "descripcion": "La potencia máxima del motor - 143 kW / 195 hp - se obtiene por 5900 rpm, y el par máximo (torque) de 244 Nm - por 4700 rpm. En 7.30 s el BMW 325i puede acelerar de 0 a 60 mph. El automóvil tiene la capacidad de hacer un cuadro de milla en 15.80 s. El vehículo tiene un coeficiente de resistencia/arrastre de 0.3.",
+        "precio":  2000,
+        "divisa": "USD",
+        "img": "./assets/images/motor-S50B32-E36.jpg"
+    },
+    {
+        "id": 3,
+        "serie": "MOTOR S65",
+        "nombre": "Motor M3 E92 2007",
+        "descripcion": "El BMW S65 es un motor de gasolina V8 de aspiración natural que se fabricó entre 2007 y 2013. Su uso principal fue en el BMW M3 (donde reemplazó al motor BMW S54 de seis cilindros en línea). No hay un reemplazo directo para el S65, ya que la siguiente generación de M3 cambió a un motor turboalimentado de seis cilindros en línea (el BMW S55 ).",
+        "precio":  2500,
+        "divisa": "USD",
+        "img": "./assets/images/Motor-S65-E92.jpg"
+    },
+    {
+        "id": 4,
+        "serie": "TRANSMISION M54 Zf",
+        "nombre": "Transmision Bmw M5 E60",
+        "descripcion": "Transmision manual de 6 velocidades para Bmw M5 E60 2005.",
+        "precio": 1200,
+        "divisa": "USD",
+        "img": "./assets/images/motor-S50B32-E36.jpg"
+    },
+    {
+        "id": 5,
+        "serie": "TRANSMISION 46k",
+        "nombre": "Transmision de E36",
+        "descripcion": "Transmision de 6 velocidades para Bmw M5 E36 1991.",
+        "precio": 1000,
+        "divisa": "USD",
+        "img": "./assets/images/Transmision-46k.jpg"
+    },
+    {
+        "id": 6,
+        "serie": "TRANSMISION N54",
+        "nombre": "Transmision para E92",
+        "descripcion": "Transmision de 6 velocidades para Bmw M3 E92 2007.",
+        "precio": 1200,
+        "divisa": "USD",
+        "img": "./assets/images/Transmision-N54.jpg"
+    },
+    {
+        "id": 7,
+        "serie": "TURBO E46",
+        "nombre": "Turbo E46 para E46 E39",
+        "descripcion": "Turbo garret para modelos 318d 320d 520d E46 E39 2.0D, Diesel.",
+        "precio": 500,
+        "divisa": "USD",
+        "img": "./assets/images/turbo-e46.jpg"
+    },
+    {
+        "id": 8,
+        "serie": "TURBO B58",
+        "nombre": "Turbo B58 para modelo Bmw 340i",
+        "descripcion": "Turbo B58 para modelo Bmw 340i de 2015 a 2022",
+        "precio": 700,
+        "divisa": "USD",
+        "img": "./assets/images/turbo-b58.jpg"
+    },
+    {
+        "id": 9,
+        "serie": "TURBO F80",
+        "nombre": "Turbo de Bmw M4",
+        "descripcion": "Turbo para Bmw M2, M3 y M4 F80 F82 F87 2015 a 2022 ",
+        "precio": 800,
+        "divisa": "USD",
+        "img": "./assets/images/turbo-f80.jpg"
+    }
+
+    
+]
